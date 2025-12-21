@@ -99,7 +99,7 @@ const VapiWidget = () => {
       {/* Title */}
       <div className="text-center mb-8">
         <h1 className="text-3xl font-black font-mono">
-          <span>Talk to Your</span>
+          <span>Talk to Your </span>
           <span className="text-primary uppercase">AI Dental Assistant</span>
         </h1>
         <p className="text-muted-foreground mt-2">Have a voice conversation with our AI assistant for dental advice and guidance</p>
@@ -143,16 +143,16 @@ const VapiWidget = () => {
           </div>
         </Card>
 
-        {/* User Card */}
+        {/* USER CARD */}
         <Card className={`bg-card/90 backdrop-blur-sm border overflow-hidden relative`}>
-          <div className="aspect-video flex-col items-center justify-center p-6 relative">
+          <div className="aspect-video flex flex-col items-center justify-center p-6 relative">
             {/* User Image */}
             <div className="relative size-32 mb-4">
               <Image src={user?.imageUrl!} alt="User" width={128} height={128} className="size-full object-cover rounded-full" />
             </div>
 
             <h2 className="text-xl font-bold text-foreground">You</h2>
-            <p className="text-sm text-muted-foreground mt-1">{user ? (user.firstName + '' + (user.lastName || '')).trim() : 'Guest'}</p>
+            <p className="text-sm text-muted-foreground mt-1">{user ? (user.firstName + ' ' + (user.lastName || '')).trim() : 'Guest'}</p>
 
             {/* User Ready Text */}
             <div className={`mt-4 flex items-center gap-2 px-3 py-1 rounded-full bg-card border`}>

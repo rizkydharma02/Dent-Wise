@@ -20,7 +20,7 @@ Highlights:
 - ⚡ Data Fetching with TanStack Query
 - 🤖 CodeRabbit for PR Optimizations
 - 🧑‍💻 Git & GitHub Workflow (branches, PRs, merges)
-- 🚀 Deployment on Sevalla (free-tier friendly)
+- 🚀 Deployment on vercel
 
 ---
 

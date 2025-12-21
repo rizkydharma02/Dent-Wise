@@ -4,7 +4,7 @@ import { auth, currentUser } from '@clerk/nextjs/server';
 import { CrownIcon } from 'lucide-react';
 import { redirect } from 'next/navigation';
 
-const ProPage = async () => {
+async function ProPage() {
   const user = await currentUser();
 
   if (!user) redirect('/');
@@ -48,6 +48,6 @@ const ProPage = async () => {
       </div>
     </>
   );
-};
+}
 
 export default ProPage;
